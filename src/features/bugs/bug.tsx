@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Bug(props) {
+export default function Bug(props: any) {
   return (
     <div>
       <div>{`${props.isSmashed}`}</div>
