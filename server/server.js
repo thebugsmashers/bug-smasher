@@ -2,7 +2,7 @@ require('dotenv').config()
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
-const { getBugs, createBug } = require('./controllers/bugController.js')
+const { getBugs, createBug, smashBug } = require('./controllers/bugController.js')
 const { createUser } = require('./controllers/userController.js')
 
 const app = express();
@@ -19,6 +19,11 @@ app.get('/', async (req, res) => {
 
 app.post('/user', createUser, (req, res) => {
   return res.status(200).send('Successfully created user!')
+})
+
+// smash bug (set is_smashed to true)
+app.post('/bug/smash', smashBug, (req, res) => {
+  return res.status(200).send(`Bug successfully smashed!`)
 })
 
 // fetch all bugs from the database

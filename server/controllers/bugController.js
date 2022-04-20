@@ -29,4 +29,20 @@ bugController.createBug = async (req, res, next) => {
   }
 }
 
+bugController.smashBug = async (req, res, next) => {
+  try {
+    const { id } = req.body;
+    const params = [id];
+    const query = `
+    UPDATE bugs
+    set is_smashed=true
+    WHERE _id=$1;`
+    const result = await db.query(query,params);
+    console.log(result);
+    return next();
+  } catch (error) {
+    return next(error)
+  }
+}
+
 module.exports = bugController;
