@@ -1,0 +1,44 @@
+.bugCard {
+  width: 30%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+
+.buttonsContainer {
+  width: 70%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  padding: 1rem 2rem;
+  background-color: lightgreen;
+  border: none;
+  border-radius: .5rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: all .15s;
+  width: 70%;
+  box-shadow: 0 .05rem .2rem rgb(116, 185, 116);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(106, 251, 106);
+}
+
+button.smashing {
+  cursor: none;
+  color: white;
+  background-color: red;
+  border: none;
+  transform: scale(3) rotate(-5deg);
+  box-shadow: .2rem .2rem .5rem rgb(128, 128, 128);
+}
