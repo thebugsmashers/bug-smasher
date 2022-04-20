@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+header {
+  display: grid;
+  grid-template-columns: 30% 40% repeat(3, 10%);
+  background-color: rgb(255, 114, 114);
+  box-shadow: inset 0 -.25rem .25rem rgb(238, 81, 81, 0.5)
+}
+
+header > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logoContainer {
+  margin: 0 0 0 .5rem;
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#logo {
+  margin: 0 0 0 .5rem;
+  height: 10rem;
+  width: 10rem;
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+}
+
+#pageTitleContainer {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+#pageTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Sigmar One', sans-serif;
+  font-size: 5rem;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+  position: absolute;
+  line-height: 5rem;
+}
+
+#titlePow {
+  height: 30rem;
+  position: absolute;
+  opacity: 90%;
+}
+
+#userAvatarContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+#userAvatar {
+  margin: 0 0 0 .5rem;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+#userAvatarContainer h3 {
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+#logout {
+  margin: 0 0 0 1rem;
+}
+
+#logout > h3:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+}
