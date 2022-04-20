@@ -6,7 +6,7 @@
 //   initialState,
 //   reducers: {
 //     smash: (state: BugState, id) => {
-//       console.log('STATE: ', state.bugID);
+//       console.log('STATE: ', state.bugId);
 //       console.log('SMASH BEFORE: ', state.isSmashed);
 //       console.log('SMASH');
 //       document.getElementById(id);

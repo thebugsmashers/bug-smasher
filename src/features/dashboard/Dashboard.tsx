@@ -4,7 +4,7 @@ import Bug from '../bugs/bug';
 import { useAppSelector, useAppDispatch } from '../../app/hooks';
 import { smash, selectDashboard } from './DashboardSlice';
 
-type BugObj = {
+export type BugObj = {
   bugId: number;
   title: string;
   priority: string;
@@ -18,23 +18,25 @@ type BugsObjArr = {
 };
 
 export default function Dashboard() {
-  const dashboard = useAppSelector(selectDashboard);
+  const dashboard: any = useAppSelector(selectDashboard);
   const dispatch = useAppDispatch();
   console.log('dashboard:', dashboard);
   console.log('dashboardBugs:', dashboard.bugs);
-  console.log('BUG1:', dashboard.bugs[1]);
+  console.log(dashboard.bugs['1']);
+  //console.log(typeof dashboard.bugs);
   // const bugsObj: BugsObjArr = dashboard.bugs;
 
-  const bugs = [];
-  for (let i = 0; i < 4; i++) {
+  const bugs: JSX.Element[] = [];
+  Object.keys(dashboard.bugs).forEach((key) => {
     bugs.push(
       <Bug
-        id={i}
-        key={i}
-        smash={dispatch(smash)}
-        isSmashedBool={dashboard.bugs}
+        id={key}
+        key={key}
+        smash={() => dispatch(smash(dashboard.bugs[key].bugId))}
+        isSmashedBool={dashboard.bugs[key].isSmashed}
       />
     );
-  }
+  });
+
   return <div>{bugs}</div>;
 }

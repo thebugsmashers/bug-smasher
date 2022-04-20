@@ -1,7 +1,7 @@
 export default function BugData() {
   return {
     1: {
-      bugID: 1,
+      bugId: 1,
       title: '',
       priority: '',
       descrtiption: '',
@@ -10,7 +10,7 @@ export default function BugData() {
       createdAt: '',
     },
     2: {
-      bugID: 2,
+      bugId: 2,
       title: '',
       priority: '',
       descrtiption: '',
@@ -19,7 +19,7 @@ export default function BugData() {
       createdAt: '',
     },
     3: {
-      bugID: 3,
+      bugId: 3,
       title: '',
       priority: '',
       descrtiption: '',
