@@ -8,6 +8,7 @@
   border: 1px solid black;
   border-radius: 1rem;
   margin: 0 auto;
+  transition: opacity 1s;
 }
 
 .buttonsContainer {
@@ -36,10 +37,16 @@ button:hover {
 
 button.smashing {
   cursor: none;
-  color: white;
-  background-color: red;
-  border: none;
   width: fit-content;
   transform: scale(3) rotate(-5deg);
   box-shadow: .2rem .2rem .5rem rgb(128, 128, 128);
+}
+
+button.smashed {
+  color: white;
+  background-color: red;
+}
+
+.archived {
+  opacity: 0;
 }
