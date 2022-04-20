@@ -18,11 +18,11 @@ export const DashboardSlice = createSlice({
   initialState,
   reducers: {
     smash: (state: BugsState, id: PayloadAction<number>) => {
-      console.log('STATE: ', state.bugs[id.payload]);
-      console.log('SMASH BEFORE: ', state.bugs[id.payload].isSmashed);
-      console.log('SMASH');
+      // console.log('STATE: ', state.bugs[id.payload]);
+      // console.log('SMASH BEFORE: ', state.bugs[id.payload].isSmashed);
+      // console.log('SMASH');
       state.bugs[id.payload].isSmashed = true;
-      console.log('SMASH AFTER: ', state.bugs[id.payload].isSmashed);
+      // console.log('SMASH AFTER: ', state.bugs[id.payload].isSmashed);
     },
   },
 });
