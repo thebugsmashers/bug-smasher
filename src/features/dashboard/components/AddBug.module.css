@@ -1,4 +1,4 @@
-.bugCard {
+.addBug {
   width: 30%;
   height: 20%;
   display: flex;
@@ -9,15 +9,30 @@
   border-radius: 1rem;
   margin: 0 auto;
 }
-
-.buttonsContainer {
-  width: 70%;
-  padding: 1rem;
+.flexBox {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
 }
 
-button {
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  border-radius: 14px;
+  padding: 10px;
+}
+
+.logoOptions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid black;
+  border-radius: 14px;
+  padding: 10px;
+}
+
+.buttonTwo {
   padding: 1rem 2rem;
   background-color: lightgreen;
   border: none;
@@ -25,20 +40,6 @@ button {
   font-weight: bold;
   font-size: 1.3rem;
   transition: all 0.15s;
-  width: 70%;
+  width: 100%;
   box-shadow: 0 0.05rem 0.2rem rgb(116, 185, 116);
-}
-
-button:hover {
-  cursor: pointer;
-  background-color: rgb(106, 251, 106);
-}
-
-button.smashing {
-  cursor: none;
-  color: white;
-  background-color: red;
-  border: none;
-  transform: scale(3) rotate(-5deg);
-  box-shadow: 0.2rem 0.2rem 0.5rem rgb(128, 128, 128);
 }
