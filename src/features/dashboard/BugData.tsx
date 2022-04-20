@@ -1,6 +1,6 @@
 export default function BugData() {
-  return {
-    1: {
+  return [
+    {
       bugId: 1,
       title: '',
       priority: '',
@@ -9,7 +9,7 @@ export default function BugData() {
       smashBy: '',
       createdAt: '',
     },
-    2: {
+    {
       bugId: 2,
       title: '',
       priority: '',
@@ -18,7 +18,7 @@ export default function BugData() {
       smashBy: '',
       createdAt: '',
     },
-    3: {
+    {
       bugId: 3,
       title: '',
       priority: '',
@@ -27,5 +27,5 @@ export default function BugData() {
       smashBy: '',
       createdAt: '',
     },
-  };
+  ];
 }

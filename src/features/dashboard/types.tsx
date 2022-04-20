@@ -1,9 +1,20 @@
 interface BugCardProps {
   title: string;
   description: string;
-  smashByDate: string; // Number? Date type?
-  priority: number; // string?
+  priority: number;
+  smashByDate: string;
+  isSmashed: boolean;
+  createdAt: string;
 }
 
-// eslint-disable-next-line import/prefer-default-export
-export type { BugCardProps };
+interface BugObj {
+  bugId: number;
+  title: string;
+  priority: string;
+  descrtiption: string;
+  isSmashed: boolean;
+  smashBy: string;
+  createdAt: string;
+}
+
+export type { BugCardProps, BugObj };
