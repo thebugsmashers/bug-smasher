@@ -1,0 +1,45 @@
+.addBug {
+  width: 30%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+.flexBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  border-radius: 14px;
+  padding: 10px;
+}
+
+.logoOptions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid black;
+  border-radius: 14px;
+  padding: 10px;
+}
+
+.buttonTwo {
+  padding: 1rem 2rem;
+  background-color: lightgreen;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: all 0.15s;
+  width: 100%;
+  box-shadow: 0 0.05rem 0.2rem rgb(116, 185, 116);
+}

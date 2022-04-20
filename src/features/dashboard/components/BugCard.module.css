@@ -22,12 +22,12 @@ button {
   padding: 1rem 2rem;
   background-color: lightgreen;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   font-weight: bold;
   font-size: 1.3rem;
-  transition: all .15s;
+  transition: all 0.15s;
   width: 70%;
-  box-shadow: 0 .05rem .2rem rgb(116, 185, 116);
+  box-shadow: 0 0.05rem 0.2rem rgb(116, 185, 116);
 }
 
 button:hover {
