@@ -1,4 +1,5 @@
 import React from 'react';
+import HeaderBar from './features/dashboard/containers/HeaderBar';
 import BugCard from './features/dashboard/components/BugCard';
 import { BugCardProps } from './features/dashboard/types';
 import './App.css';
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <div className="App">
+      <HeaderBar />
       <BugCard
         title={title}
         description={description}

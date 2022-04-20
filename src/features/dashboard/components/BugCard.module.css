@@ -39,6 +39,7 @@ button.smashing {
   color: white;
   background-color: red;
   border: none;
+  width: fit-content;
   transform: scale(3) rotate(-5deg);
   box-shadow: .2rem .2rem .5rem rgb(128, 128, 128);
 }

@@ -6,7 +6,7 @@ function BugCard({ title, description, smashByDate }: BugCardProps): JSX.Element
   const [bugTitle, setTitle]: [string, Function] = useState(title);
   const [bugDescription, setDescription]: [string, Function] = useState(description);
 
-  const bugSmashEffects: string[] = ['SQUELCH!', 'SMUSH!', 'SMASH!', 'SQUISH!', '...yuck'];
+  const bugSmashEffects: string[] = ['SMASH!', 'SQUELCH!', 'SMUSH!', 'SQUISH!', 'SMOOSH!', '...yuck'];
   const [smashEffectIndex, updateSmashEffectIndex]: [number, Function] = useState(0);
 
   function smashHandler(event: React.MouseEvent<HTMLButtonElement>) {
@@ -29,7 +29,7 @@ function BugCard({ title, description, smashByDate }: BugCardProps): JSX.Element
       <p>{bugDescription}</p>
       <p>{`Smash By: ${smashByDate}`}</p>
       <div className={styles.buttonsContainer}>
-        <button type="button" onClick={smashHandler}>Smash it!</button>
+        <button type="button" onClick={smashHandler} aria-label="Smash the bug!">Smash it!</button>
       </div>
     </div>
   );
